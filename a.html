@@ -4,8 +4,8 @@
 <meta charset="UTF-8"/>
 <script type="text/javascript">
 function sum() {
-    var form = document.forms['form'];
-    form.c.value = parseFloat(form.a.value) + parseFloat(form.b.value);
+  // 修正: 文字列を数値に変換してから加算する
+    form.c.value = parseFloat(form.a.value) + parseFloat(form.b.value);	
 }
 </script>
 </head>
